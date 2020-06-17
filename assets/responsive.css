@@ -1,0 +1,92 @@
+/* Ukuran Tablet */
+@media screen and (max-width: 768px) {
+    .article-wrapper{
+        width: 100%;
+        text-align: center;
+    }
+    .card {
+        width: 100%;
+    }
+    nav{
+        padding: 0;
+    }
+    nav .logo{
+        padding: 0 20px;
+
+    }
+    nav ul{
+        width: 100%;
+        padding: 0;
+        background-color: rgb(255, 255, 255);
+        height: 100vh;
+        max-height: 0;
+        overflow: hidden;
+        transition: all ease-in-out 0.3s;
+    }
+    nav ul.open{
+        max-height: 100vh;
+    }
+    nav ul li{
+        width: 100%;
+    }
+    nav ul li a{
+        padding: 0;
+    }
+    nav .navbar-toggler{
+        display: block;
+        position: absolute;
+        height: 40px;
+        top: 20px;
+        right: 20px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        padding: 0 5px;
+        cursor: pointer;
+    }
+    nav .navbar-toggler span,
+    nav .navbar-toggler span::before,
+    nav .navbar-toggler span::after{
+        display: block;
+        content: '';
+        background-color: #32a2ad;
+        height: 3px;
+        width: 28px;
+        border-radius: 4px;
+        transition: all ease-in-out 0.3s;
+    }
+    nav .navbar-toggler span::before{ 
+        transform: translateY(-8px);
+    }
+    nav .navbar-toggler span::after{ 
+        transform: translateY(5px);
+    }
+    nav .navbar-toggler.open-navbar-toggler span{
+        /* transform: rotate(90deg); */
+        background-color: transparent;
+        transform: scale(0.85) rotate(270deg);
+    }
+    nav .navbar-toggler.open-navbar-toggler span::before{
+        /* transform: translateY(0px) rotate(45deg); */
+        transform: translateY(0px) scale(0.75) rotate(45deg);
+    }
+    nav .navbar-toggler.open-navbar-toggler span::after{
+        /* transform: translateY(-3px) rotate(-45deg); */
+        transform: translateY(-3px) scale(0.75) rotate(-45deg);
+
+    }
+
+
+/* Ukuran Mobile */
+@media screen and (max-width: 576px) {
+    .banner{
+        text-align: left;
+    }
+    .banner h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    footer{
+        font-size: 14px;
+    }
+ }
